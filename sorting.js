@@ -83,7 +83,7 @@ function partition(array, start, end) {
   return j;
 }
 
-console.log(quickSort([3, 9, 1, 14, 17, 24, 22, 20]));
+console.log(quickSort([14, 17, 13, 15, 19, 10, 3, 16, 9, 12]));
 
 /* 1) Suppose you are debugging a quicksort implementation that is supposed to sort an array
   in ascending order. After the first partition step has been completed, the contents of the
@@ -97,6 +97,8 @@ console.log(quickSort([3, 9, 1, 14, 17, 24, 22, 20]));
 list after the second partitioning according to the quicksort algorithm. */
 
 // When using the last item on the list as a pivot
-[]
+// [10, 3, 9, 12, 19, 14, 17, 16, 13, 15]
 
 // When using the first item on the list as a pivot
+// [14, 13, 10, 3, 9, 12, 15, 16, 19, 17]
+
