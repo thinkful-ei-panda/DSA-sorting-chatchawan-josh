@@ -52,11 +52,7 @@ console.log(mergeSort([21, 1, 26, 45, 29, 28, 2, 9, 16, 49, 39, 27, 43, 34, 46, 
 // Which two lists would be merged on the 7th merge?
 // [16] and [49]
 
-/* 2. Understanding quicksort
-1) Suppose you are debugging a quicksort implementation that is supposed to sort an array
-  in ascending order. After the first partition step has been completed, the contents of the
-  array is in the following order: 3 9 1 14 17 24 22 20. Which of the following statements
-  is correct about the partition step? Explain your answer. */
+// 2. Understanding quicksort
 
 function quickSort(array, start = 0, end = array.length) {
   if (start >= end) {
@@ -89,3 +85,18 @@ function partition(array, start, end) {
 
 console.log(quickSort([3, 9, 1, 14, 17, 24, 22, 20]));
 
+/* 1) Suppose you are debugging a quicksort implementation that is supposed to sort an array
+  in ascending order. After the first partition step has been completed, the contents of the
+  array is in the following order: 3 9 1 14 17 24 22 20. Which of the following statements
+  is correct about the partition step? Explain your answer. */
+
+// The pivot could have been either 14 or 17 - everyting to the left of 14 and 17 is less than both,
+// everything to the right of 14 and 17 is greater than both.
+
+/* 2) Given the following list of numbers 14, 17, 13, 15, 19, 10, 3, 16, 9, 12 show the resulting
+list after the second partitioning according to the quicksort algorithm. */
+
+// When using the last item on the list as a pivot
+[]
+
+// When using the first item on the list as a pivot
