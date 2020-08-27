@@ -1,0 +1,1 @@
+[Blood Meridian, East of West, The Big Sleep, Pandemonium, The Information, Superintelligence, IQ84, Physics of the Impossible, Outer Dark, The Long Goodbye, At the Edge of Time, The Dark Is Rising, The Grey King, The Road, House of X, Powers of X, The Singularity Is Near, Playback, Naked Lunch, Calvin and Hobbes]
