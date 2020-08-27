@@ -392,9 +392,5 @@ Imagine that I gave you 20 books to sort in alphabetical order. Express this as 
 */
 
 let nonSortedArray = ['Blood Meridian', 'East of West', 'The Big Sleep', 'Pandemonium', 'The Information', 'Superintelligence', 'IQ84', 'Physics of the Impossible', 'Outer Dark', 'The Long Goodbye', 'At the Edge of Time', 'The Dark Is Rising', 'The Grey King', 'The Road', 'House of X', 'Powers of X', 'The Singularity Is Near', 'Playback', 'Naked Lunch', 'Calvin and Hobbes'];
-let sortedArray = nonSortedArray.sort(function (a, b) {
-  if (a < b) return -1;
-  else if (a > b) return 1;
-  return 0;
-});
+let sortedArray = nonSortedArray.sort();
 console.log(sortedArray);
