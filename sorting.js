@@ -1,4 +1,3 @@
-debugger;
 function merge(left, right, array) {
   let leftIndex = 0;
   let rightIndex = 0;
@@ -16,7 +15,6 @@ function merge(left, right, array) {
   }
 
   for (let i = rightIndex; i < right.length; i++) {
-    console.log(outputIndex++, array.length - 1);
     array[outputIndex++] = right[i];
   }
   return array;
