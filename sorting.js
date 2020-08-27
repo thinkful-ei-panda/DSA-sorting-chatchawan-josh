@@ -34,4 +34,16 @@ function mergeSort(array) {
   return merge(left, right, array);
 }
 
-console.log(mergeSort([5, 8, 1, 4, 0, 3, 5, 8, 1, 4, 7]));
+console.log(mergeSort([21, 1, 26, 45, 29, 28, 2, 9, 16, 49, 39, 27, 43, 34, 46, 40]));
+
+// What is the resulting list that will be sorted after 3 recursive calls to mergesort?
+// [21, 1]
+
+// What is the resulting list that will be sorted after 16 recursive calls to mergesort?
+// [16, 49, 39, 27, 43, 34, 46, 40]
+
+// What are the first 2 lists to be merged?
+// [21] and [1], [26] and [45], [1, 21] and [26,45]
+
+// Which two lists would be merged on the 7th merge?
+// [16] and [49]
