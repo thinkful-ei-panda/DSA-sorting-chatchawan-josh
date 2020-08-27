@@ -386,9 +386,26 @@ See question 1
 
 5) Given a Linked List, sort the linked list using merge sort. You will need your linked list class from previous lesson to create the list and use all of its supplemental functions to solve this problem.
 
+6. Bucket sort
+Write an O(n) algorithm to sort an array of integers, where you know in advance what the lowest and highest values are. You can't use arr.splice(), shift() or unshift() for this exercise.
+
+7) Sort in place
+Write an algorithm to shuffle an array into a random order in place (i.e., without creating a new array).*/
+
+function YatesShuffle (array){
+  for(let i = array.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * i);
+    const temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+  return array;
+}
+console.log('YatesShuffle', YatesShuffle([3, 1, 7, 9, 11, 13, 21]));
+
+/*
 8) Sorting books
 Imagine that I gave you 20 books to sort in alphabetical order. Express this as an algorithm and then implement your algorithm.
-
 */
 
 let nonSortedArray = ['Blood Meridian', 'East of West', 'The Big Sleep', 'Pandemonium', 'The Information', 'Superintelligence', 'IQ84', 'Physics of the Impossible', 'Outer Dark', 'The Long Goodbye', 'At the Edge of Time', 'The Dark Is Rising', 'The Grey King', 'The Road', 'House of X', 'Powers of X', 'The Singularity Is Near', 'Playback', 'Naked Lunch', 'Calvin and Hobbes'];
